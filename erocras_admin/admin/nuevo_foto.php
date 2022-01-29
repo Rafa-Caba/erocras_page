@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_FILES)) {
             ':titulo_imagen' => $titulo
         ));
 
-        header('Location: ' . RUTA_ERO . 'admin/galeria.php');
+        header('Location: ' . RUTA_ERO . 'erocras_admin/admin/galeria.php');
 
     } else {
         $error = "El archivo no es una imagen o el archivo es muy pesado";
