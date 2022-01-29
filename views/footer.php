@@ -1,11 +1,11 @@
-                    <section class="logo col-12 col-md-2 d-flex flex-column align-content-start order-2 order-md-2">
-                        <div class="logo-contenedor mx-auto d-flex flex-column align-items-center">
-                            <div class="logo-img w-75 my-5">
-                                <img class="img-fluid" src="../../../images/ero-cras-cruz.png" alt="Ero Cras">
-                            </div>
+                <section class="logo col-12 col-md-2 d-flex flex-column align-content-start order-1 order-md-2">
+                    <div class="logo-contenedor d-flex flex-column align-items-center">
+                        <div class="logo-img my-5">
+                            <img class="img-fluid" src="images/ero-cras-cruz.png" alt="Ero Cras">
                         </div>
-                    </section>
-                </main>
+                    </div>
+                </section>
+            </main>
 
             <footer class="footer row">
                 <div class="footer my-2 d-flex flex-column flex-md-row justify-content-between">
@@ -13,7 +13,7 @@
                         <p class="text-black-50">Creada por Rafael Cabanillas - 2022</p>
                     </div>
                     <div class="redes">
-                    <ul class="nav w-100 order-1 d-flex justify-content-center">
+                        <ul class="nav w-100 order-1 d-flex justify-content-center">
                             <li class="nav-item">
                             <a class="nav-link" href="https://www.facebook.com/eroCrasCoro/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             </li>

@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
         <title>Ero Cras Oficial</title>
     </head>
     <body>
@@ -16,9 +16,6 @@
                 <div class="titulo-nav px-0 col-12 d-flex flex-column">
                     <div class="titulo mx-5 text-black d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
                         <div class="titulo text-center text-md-start"><h1>Ero Cras Oficial</h1></div>
-                        <div class="visitante_num mt-2">
-                            <p class="fs-4 fw-light">Visitante #<?php echo $num_visitas; ?></p>
-                        </div>
                     </div>
 
                     <nav class="navbar w-100 d-flex">
@@ -47,7 +44,7 @@
             <main class="main row d-flex">
                 <section class="sidebar col-12 col-md-2 d-flex flex-column align-items-center order-2 order-md-0">
                     <div class="col-9 my-5">
-                        <img src="../images/jesusito.jpg" class="img-fluid" alt="Jesusito">
+                        <img src="images/jesusito.jpg" class="img-fluid" alt="Jesusito">
                     </div>
                 </section>
 
@@ -69,21 +66,39 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="carousel-caption">
-                                        <h5>2021</h5>
+                                        <h5><?php echo $imagenes[0]['titulo_imagen']; ?></h5>
                                     </div>
-                                    <img class="img-fluid" src="../images/ero-cras-2021.png" alt="">
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[0]['imagen_nombre']; ?>" alt="">
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
-                                        <h5>2020</h5>
+                                        <h5><?php echo $imagenes[1]['titulo_imagen']; ?></h5>
                                     </div>
-                                    <img class="img-fluid" src="../images/ero-cras-2020.png" alt="">
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[1]['imagen_nombre']; ?>" alt="">
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
-                                        <h5>2019</h5>
+                                        <h5><?php echo $imagenes[2]['titulo_imagen']; ?></h5>
                                     </div>
-                                    <img class="img-fluid" src="../images/ero-cras-2019.jpg" alt="">
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[2]['imagen_nombre']; ?>" alt="">
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <h5><?php echo $imagenes[3]['titulo_imagen']; ?></h5>
+                                    </div>
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[3]['imagen_nombre']; ?>" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <h5><?php echo $imagenes[4]['titulo_imagen']; ?></h5>
+                                    </div>
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[4]['imagen_nombre']; ?>" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <h5><?php echo $imagenes[5]['titulo_imagen']; ?></h5>
+                                    </div>
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[5]['imagen_nombre']; ?>" alt="">
                                 </div>
                             </div>
 
@@ -123,6 +138,24 @@
                                     data-bs-target="#mi-carousel"
                                     data-bs-slide-to="2"
                                     aria-label="Slide 3"
+                                ></button>
+                                <button type="button"
+                                    class="active"
+                                    data-bs-target="#mi-carousel"
+                                    data-bs-slide-to="3"
+                                    aria-label="Slide 4"
+                                ></button>
+
+                                <button type="button"
+                                    data-bs-target="#mi-carousel"
+                                    data-bs-slide-to="4"
+                                    aria-label="Slide 5"
+                                ></button>
+
+                                <button type="button"
+                                    data-bs-target="#mi-carousel"
+                                    data-bs-slide-to="5"
+                                    aria-label="Slide 6"
                                 ></button>
                             </div>
                         </div>

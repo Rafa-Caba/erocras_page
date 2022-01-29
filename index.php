@@ -10,6 +10,6 @@ $conn = conn_mysqli($bd_config);
 $imagenes = leer_imagenes_db($conn);
 
 // Incrementando el numero de visitas
-$num_visitas = contar_visitas(conexion($bd_config));
+//$num_visitas = contar_visitas(conexion($bd_config));
 
 require 'views/index.view.php';

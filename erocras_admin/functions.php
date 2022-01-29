@@ -72,24 +72,24 @@ function comprobarSesion() {
 }
 
 // Obtener contador de visita y actualizarlo y devuelve el num de visitas
-function contar_visitas($conn) {
-    $total_visitas = $conn->query("SELECT numero_visitas FROM visitas");
-    $total_visitas = $total_visitas->fetchAll();
+// function contar_visitas($conn) {
+//     $total_visitas = $conn->query("SELECT numero_visitas FROM visitas");
+//     $total_visitas = $total_visitas->fetchAll();
 
-    $num_visitas = $total_visitas[0]['numero_visitas'];
-    // Aumenta el numero de visitas
-    $num_visitas++;
+//     $num_visitas = $total_visitas[0]['numero_visitas'];
+//     // Aumenta el numero de visitas
+//     $num_visitas++;
 
-    $stmt = $conn->prepare(
-        'UPDATE visitas SET numero_visitas = :numero_visitas'
-    );
+//     $stmt = $conn->prepare(
+//         'UPDATE visitas SET numero_visitas = :numero_visitas'
+//     );
 
-    $stmt->execute(array(
-        ':numero_visitas' => $num_visitas
-    ));
+//     $stmt->execute(array(
+//         ':numero_visitas' => $num_visitas
+//     ));
 
-    return $num_visitas;
-}
+//     return $num_visitas;
+// }
 
 // Leer cantos de la BD
 function leer_cantos_db($conn) {

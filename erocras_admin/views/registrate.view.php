@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../../css/estilos.css">
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
         <title>Ero Cras Oficial - Admin</title>
     </head>
     <body>
@@ -24,22 +24,36 @@
             </header>
 
             <main class="row">
-                <section>
-                    <div class="form-contenedor my-5 mx-auto col-12 col-md-8 d-flex align-items-center justify-content-center">
-                        <article class="my-5 mx-auto w-50 d-flex flex-column align-items-center justify-content-center">
-                            <h2 class="titulo">Iniciar Sesion</h2>
-                            <form class="w-100 mt-4" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
-                                <input class="mb-3 form-control" type="text" name="usuario" placeholder="Usuario">
-                                <input class="mb-3 form-control" name="password" placeholder="Contraseña">
+                <section class="center col-12 d-flex flex-column justify-content-center align-content-center order-0 order-md-1">
+                    
+                    <div class="form-contenedor container col-md-8 py-5 my-5 mx-auto d-flex flex-column align-items-center justify-content-center">
+                        <p class="text-center fs-1">Registrate</p>
 
-                                <button type="submit" class="form-control btn btn-primary mb-3 px-4">Login</button>
-                            </form>
+                        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="container col-md-5" name="login">
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <i class="icono me-2 fs-2 fa fa-user"></i><input type="text" name="usuario" class="form-control" placeholder="Usuario">
+                            </div>     
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <i class="icono me-2 fs-2 fa fa-lock"></i><input type="password" name="password" class="form-control" placeholder="Contraseña">
+                            </div>   
+                            <div class="d-flex align-items-center justify-content-center mb-3">
+                                <i class="icono me-2 fs-2 fa fa-lock"></i><input type="password" name="password2" class="form-control" placeholder="Repetir contraseña">
+                                <i class="submit-btn icono ms-2 fs-2 fa fa-arrow-right" onclick="login.submit()"></i>
+                            </div>  
+                            
+                            <?php if (!empty($errores)) : ?>
+                                <div class="error">
+                                    <ul>
+                                        <?php echo $errores; ?>
+                                    </ul>
+                                </div>
+                            <?php endif; ?>
+                        </form>
 
-                            <p>
-                                ¿ No tienes cuenta ?
-                                <a class="derecha" href="registrate.php">Regístrate</a>
-                            </p>
-                        </article>
+                        <p class="d-flex flex-column">
+                            ¿ Ya tienes cuenta ?
+                            <a class="derecha" href="login.php">Iniciar Sesión</a>
+                        </p>
                     </div>
                 </section>
             </main>

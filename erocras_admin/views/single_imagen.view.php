@@ -7,7 +7,7 @@
             </div>
             <div class="contenedor w-75">
                 <div class="imagen d-flex flex-column mb-3">
-                    <img class="img-fluid" src="../../../images/<?php echo $imagen['imagen_nombre']; ?>" alt="<?php echo $imagen['titulo_imagen']; ?>">
+                    <img class="img-fluid" src="../../images/<?php echo $imagen['imagen_nombre']; ?>" alt="<?php echo $imagen['titulo_imagen']; ?>">
                     <div class="imagen_options d-flex justify-content-center mt-3">
                         <a href="galeria.php" class="btn btn-primary fs-4 mt-3 me-3">Regresar</a>
                         <a class="btn btn-primary mt-3 fs-4 px-4" href="borrar_imagen.php?id=<?php echo $imagen['id']; ?>">Borrar</a>

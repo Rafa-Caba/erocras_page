@@ -16,7 +16,7 @@
 
                         <div class="col-10 col-md-3 flex-fill align-items-center mx-3 mb-3 justify-content-around">
                             <a href="single_imagen.php?id=<?php echo $imagen['id']; ?>">
-                                <img class="img-fluid mb-1" src="../../../images/<?php echo $imagen['imagen_nombre']; ?>" alt="<?php echo $imagen['titulo_imagen']; ?>">
+                                <img class="img-fluid mb-1" src="../../images/<?php echo $imagen['imagen_nombre']; ?>" alt="<?php echo $imagen['titulo_imagen']; ?>">
                             </a>
                             <p class="fw-bolder"><?php echo $imagen['titulo_imagen']; ?></p>
                         </div>
