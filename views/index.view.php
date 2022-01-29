@@ -68,38 +68,21 @@
                                     <div class="carousel-caption">
                                         <h5><?php echo $imagenes[0]['titulo_imagen']; ?></h5>
                                     </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[0]['imagen_nombre']; ?>" alt="">
+                                    <img class="img-fluid" src="images/<?php echo $imagenes[0]['imagen_nombre']; ?>" alt="<?php echo $imagenes[0]['titulo_imagen']; ?>">
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <h5><?php echo $imagenes[1]['titulo_imagen']; ?></h5>
-                                    </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[1]['imagen_nombre']; ?>" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <h5><?php echo $imagenes[2]['titulo_imagen']; ?></h5>
-                                    </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[2]['imagen_nombre']; ?>" alt="">
-                                </div>
-                                <div class="carousel-item active">
-                                    <div class="carousel-caption">
-                                        <h5><?php echo $imagenes[3]['titulo_imagen']; ?></h5>
-                                    </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[3]['imagen_nombre']; ?>" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <h5><?php echo $imagenes[4]['titulo_imagen']; ?></h5>
-                                    </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[4]['imagen_nombre']; ?>" alt="">
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <h5><?php echo $imagenes[5]['titulo_imagen']; ?></h5>
-                                    </div>
-                                    <img class="img-fluid" src="images/<?php echo $imagenes[5]['imagen_nombre']; ?>" alt="">
-                                </div>
+                               
+                                <?php if (count($imagenes) > 1) :?>
+                                    <?php foreach ($imagenes as $imagen) : ?>
+
+                                        <div class="carousel-item">
+                                            <div class="carousel-caption">
+                                                <h5><?php echo $imagen['titulo_imagen']; ?></h5>
+                                            </div>
+                                            <img class="img-fluid" src="images/<?php echo $imagen['imagen_nombre']; ?>" alt="<?php echo $imagen['titulo_imagen']; ?>">
+                                        </div>
+
+                                    <?php endforeach; ?>
+                                <?php endif;?>
                             </div>
 
                             <button class="carousel-control-prev" 
@@ -128,35 +111,17 @@
                                     aria-label="Slide 1"
                                 ></button>
 
-                                <button type="button"
-                                    data-bs-target="#mi-carousel"
-                                    data-bs-slide-to="1"
-                                    aria-label="Slide 2"
-                                ></button>
+                                <?php if (count($imagenes) > 1) :?>
+                                    <?php for ($i = 1; $i <= count($imagenes); $i++) : ?>
 
-                                <button type="button"
-                                    data-bs-target="#mi-carousel"
-                                    data-bs-slide-to="2"
-                                    aria-label="Slide 3"
-                                ></button>
-                                
-                                <button type="button"
-                                    data-bs-target="#mi-carousel"
-                                    data-bs-slide-to="3"
-                                    aria-label="Slide 4"
-                                ></button>
+                                        <button type="button"
+                                            data-bs-target="#mi-carousel"
+                                            data-bs-slide-to="<?php echo $i;?>"
+                                            aria-label="Slide <?php echo $i+1;?>"
+                                        ></button>
 
-                                <button type="button"
-                                    data-bs-target="#mi-carousel"
-                                    data-bs-slide-to="4"
-                                    aria-label="Slide 5"
-                                ></button>
-
-                                <button type="button"
-                                    data-bs-target="#mi-carousel"
-                                    data-bs-slide-to="5"
-                                    aria-label="Slide 6"
-                                ></button>
+                                    <?php endfor; ?>
+                                <?php endif;?>
                             </div>
                         </div>
                     </div>
