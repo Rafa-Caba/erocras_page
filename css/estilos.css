@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #CFAEF9; }
+  body a {
+    color: #fff; }
+  body p {
+    padding: 5px 5px;
+    text-align: center; }
+
+header {
+  background: #CFAEF9; }
+  header nav {
+    background: #F3E3FB; }
+
+main .sidebar {
+  background: #EAD4FF; }
+
+main .meaning {
+  background: #f5ecff;
+  border: 2px solid #CFAEF9; }
+
+main .logo {
+  background: #EAD4FF; }
+
+main .canto {
+  background: #EAD4FF; }
+
+main .logo {
+  background: #EAD4FF; }
+
+main .galeria {
+  background: #EAD4FF; }
+
+main .botones-titulo {
+  background: #CFAEF9; }
+
+main .icono {
+  color: black; }
+
+main .canto-single-link {
+  color: #000; }
+  main .canto-single-link:hover {
+    color: #8a36f8; }
+
+main .codigo_login {
+  background: #EAD4FF; }
+
+main .form-contenedor {
+  background: #EAD4FF;
+  border: 2px solid #CFAEF9; }
+
+main .form-contenedor {
+  background: #EAD4FF;
+  border: 2px solid #CFAEF9; }
+  main .form-contenedor .icono {
+    cursor: pointer; }
+    main .form-contenedor .iconohover {
+      background: #b68fe6; }
+
+main .izquierda,
+main .derecha {
+  color: #000; }
+  main .izquierda:hover,
+  main .derecha:hover {
+    color: #8a36f8; }
+
+.contenedor_tarjeta {
+  margin: 20px; }
+  .contenedor_tarjeta:hover figure {
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.25); }
+  .contenedor_tarjeta figure {
+    width: 200px;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg); }
+    .contenedor_tarjeta figure .frontal,
+    .contenedor_tarjeta figure .trasera {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      transition: all ease .5s; }
+    .contenedor_tarjeta figure .trasera {
+      position: absolute;
+      top: 0;
+      padding: 20px;
+      color: #fff;
+      transform: perspective(600px) rotateY(180deg);
+      backface-visibility: hidden;
+      overflow: auto;
+      background: rgba(174, 103, 241, 0.8); }
+      .contenedor_tarjeta figure .trasera .titulo {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 24px; }
+      .contenedor_tarjeta figure .trasera hr {
+        height: 2px;
+        background: #fff;
+        border: none;
+        margin-bottom: 20px;
+        opacity: .5; }
+      .contenedor_tarjeta figure .trasera p {
+        line-height: 22px;
+        font-size: 14px; }
+    .contenedor_tarjeta figure img {
+      width: 200px; }
+
+footer {
+  background: #b68fe6; }
+  footer .redes i {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 20px;
+    background: #A966FF;
+    border-radius: 5px; }
+  footer .redes i:hover {
+    background: #8a36f8; }
