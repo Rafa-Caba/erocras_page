@@ -139,8 +139,8 @@
                                     data-bs-slide-to="2"
                                     aria-label="Slide 3"
                                 ></button>
+                                
                                 <button type="button"
-                                    class="active"
                                     data-bs-target="#mi-carousel"
                                     data-bs-slide-to="3"
                                     aria-label="Slide 4"

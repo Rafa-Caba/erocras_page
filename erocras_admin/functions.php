@@ -3,10 +3,10 @@
 // Conexion a la base de datos
 function conexion($bd_config) {
     try {
-        $conn = new PDO('mysql:hoost=' . $bd_config['host'] . ';dbname=' . $bd_config['basedatos'], $bd_config['usuario'], $bd_config['pass']);
+        $conn = new PDO('mysql:host=' . $bd_config['host'] . ';dbname=' . $bd_config['basedatos'], $bd_config['usuario'], $bd_config['pass']);
         return $conn;
     } catch (PDOException $e) {
-        return false;
+        return $e->getMessage();
     }
 }
 
