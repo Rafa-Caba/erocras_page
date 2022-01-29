@@ -452,7 +452,7 @@
             </div>
 
             <div class="cantos-imagen d-flex mb-3 mx-auto">
-                <img class="img-fluid my-5 mx-auto" src="../images/images_members/coro-dibujo.png" alt="Dibujo coro">
+                <img class="img-fluid my-5 mx-auto" src="images/images_members/coro-dibujo.png" alt="Dibujo coro">
             </div>
         </div>
     </section>

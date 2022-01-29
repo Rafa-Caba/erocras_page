@@ -6,7 +6,7 @@
             <div class="tarjetas w-100 d-flex flex-row flex-wrap justify-content-center">
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal d-block" src="../images/images_members/rafa.JPEG" alt="Rafael">
+                        <img class="frontal d-block" src="images/images_members/rafa.JPEG" alt="Rafael">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Rafael Cabanillas</h2>
                             <hr>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/carito.JPEG" alt="Carito">
+                        <img class="frontal" src="images/images_members/carito.JPEG" alt="Carito">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Carito Dominguez</h2>
                             <hr>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/lupe.png" alt="Lupita">
+                        <img class="frontal" src="images/images_members/lupe.png" alt="Lupita">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3 fs-3">Lupita Dominguez</h2>
                             <hr>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/mariana.png" alt="Mariana">
+                        <img class="frontal" src="images/images_members/mariana.png" alt="Mariana">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Mariana Herrera</h2>
                             <hr>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/angelito.png" alt="Angelito">
+                        <img class="frontal" src="images/images_members/angelito.png" alt="Angelito">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Angel Dominguez</h2>
                             <hr>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/daniela.png" alt="Daniela">
+                        <img class="frontal" src="images/images_members/daniela.png" alt="Daniela">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Daniela Marquez</h2>
                             <hr>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/alan-2.png" alt="Alan">
+                        <img class="frontal" src="images/images_members/alan-2.png" alt="Alan">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Alan Piña</h2>
                             <hr>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/maria.jpg" alt="María">
+                        <img class="frontal" src="images/images_members/maria.jpg" alt="María">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">María Cisneros</h2>
                             <hr>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/daniel.png" alt="Daniel">
+                        <img class="frontal" src="images/images_members/daniel.png" alt="Daniel">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Daniel Glez</h2>
                             <hr>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="contenedor_tarjeta">
                     <figure class="position-relative m-0">
-                        <img class="frontal" src="../images/images_members/tonito.png" alt="Tonito">
+                        <img class="frontal" src="images/images_members/tonito.png" alt="Tonito">
                         <figcaption class="trasera">
                             <h2 class="titulo fs-3">Antonio Arias</h2>
                             <hr>

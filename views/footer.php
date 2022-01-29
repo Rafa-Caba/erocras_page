@@ -24,7 +24,7 @@
                             <a class="nav-link" href="https://youtube.com/channel/UCjh7iTV-ddkSxaLi7A1FJgA"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a class="nav-link" href="contact.php"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>

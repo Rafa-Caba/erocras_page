@@ -27,7 +27,7 @@
             </div>
 
             <div class="imagen p-2 p-md-5">
-                <img class="img-fluid" src="../images/erocras-2021.jpg" alt="Ero Cras">
+                <img class="img-fluid" src="images/erocras-2021.jpg" alt="Ero Cras">
             </div>
         </div>
     </section>
